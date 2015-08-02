@@ -1,0 +1,18 @@
+<ul class="horizontal unstyled clearfix">
+  {% for link in linklists[main-menu].links %}
+    {% if linklists[link.handle] == empty %}
+      <li>
+        <a href="{{ link.url }}" class="{% if link.active %} current{% endif %}">
+          <span>{{ link.title }}</span>
+        </a>
+      </li>
+    {% else %}
+      <li>
+        <a href="{{ link.url }}" class="{% if link.active %} current{% endif %}">
+          <span>{{ link.title }}</span>
+        </a>
+        {% include 'main-menu' with link.title %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
