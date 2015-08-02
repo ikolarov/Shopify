@@ -1,7 +1,7 @@
 Info
 =============
 
-This snippet creates a loop that will go trough all of the sub-menu elements no matter how meny they are.
+This snippet creates a loop that will go trough all of the sub-menu elements no matter how many they are.
 
 Instructions
 =============
